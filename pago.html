@@ -1,0 +1,40 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página para realizar pagos de servicios">
+    <meta name="keywords" content="pagos, servicios">
+    <meta name="author" content="Tu Nombre">
+    <link href="style/bootstrap-5.3.0-dist/bootstrap-5.3.0-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="style/bootstrap-5.3.0-dist/bootstrap-5.3.0-dist/css/estilodeinternet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div class="container mt-3">
+        <h2>Pago de servicios</h2>
+        <form onsubmit="calcularTotal(event)">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre del pagador</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Nombre y apellido" name="nombre">
+            </div>
+            
+            <div id="servicios-container">
+                <div class="mb-3">
+                    <label for="nombre-servicio" class="form-label">Nombre del servicio</label>
+                    <input type="text" class="form-control" id="nombre-servicio" placeholder="Nombre del servicio" name="nombre-servicio[]">
+                </div>
+                <div class="mb-3">
+                    <label for="costo-servicio" class="form-label">Costo del servicio</label>
+                    <input type="number" class="form-control" id="costo-servicio" placeholder="Costo" name="costo-servicio[]">
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="agregarServicio()">Agregar servicio</button>
+            <div id="total-container" class="mt-3">
+                <label for="total" class="form-label">Total a pagar</label>
+                <input type="text" class="form-control" id="total" placeholder="Total" readonly>
+            </div>
+            <button type="submit" class="btn btn-primary">Calcular pago</button>
+        </form>
+    </div>
+    <script src="JS/calcularServicio.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+
+<html>
+    <head>
+        <title>Inicio de sesion</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style/bootstrap-5.3.0-dist/bootstrap-5.3.0-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="style/bootstrap-5.3.0-dist/bootstrap-5.3.0-dist/css/estilodeinternet.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <form class="was-validated">
+          <div class="mb-3 mt-3">
+            <label for="uname" class="form-label">Nombre de usuario:</label>
+            <input type="text" class="form-control" id="uname" placeholder="Ingrese su nombre de usuario" name="uname" required>
+            <div class="valid-feedback">Válido.</div>
+            <div class="invalid-feedback">Por favor, complete este campo.</div>
+          </div>
+          <div class="mb-3">
+            <label for="pwd" class="form-label">Contraseña:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Ingrese su contraseña" name="pswd" required>
+            <div class="valid-feedback">Válido.</div>
+            <div class="invalid-feedback">Por favor, complete este campo.</div>
+          </div>
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="myCheck" name="remember" required>
+            <label class="form-check-label" for="myCheck">Estoy de acuerdo en el acuerdo de licencia.</label>
+            <div class="valid-feedback">Válido.</div>
+            <div class="invalid-feedback">Marque esta casilla para continuar.</div>
+          </div>
+          <button type="submit" class="btn btn-primary" onclick="window.location.href='index.html'">Entrar</button>
+          <button type="submit" class="btn btn-primary" onclick="window.location.href='internet.html'">Reegistrarse</button>
+        </form>
+
+    </body>
+</html>

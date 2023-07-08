@@ -1,0 +1,44 @@
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Paguina para dar de altas de internet">
+        <meta name="keywords" content="altas,inicio">
+        <meta name="author" content="Rafael">
+        <link href="style/bootstrap-5.3.0-dist/bootstrap-5.3.0-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="style/bootstrap-5.3.0-dist/bootstrap-5.3.0-dist/css/estilodeinternet.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="container mt-3">
+          <h2>Alta de internet</h2>
+          <form>
+              <input type="password" class="form-control" placeholder="Clave de Empleado">
+          </form>
+            <input type="text" class="form-control mt-3" placeholder="Nombre y primer apellido">
+            
+            <form>
+              <div class="mb-3 mt-3">
+                <label for="email" class="form-label">Correo</label>
+                <input type="email" class="form-control" id="email" placeholder="Correo: ejemplo@gmail.com" name="email">
+              </div>
+                <div class="mb-3 mt-3">
+                <label for="text" class="form-label">Usuario</label>
+                <input type="text" class="form-control" id="text" placeholder="Nombre de Usuario" name="texto">
+              </div>
+              <div class="mb-3">
+                <label for="pwd" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Contraseña de Usuario" name="pswd">
+              </div>
+              <div class="form-check mb-3">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" name="remember"> Entiendo mis responsabilidades y acepto los terminos y condiciones.
+                </label>
+              </div>
+              <button type="submit" class="btn btn-primary" onclick="window.location.href='index.html'">Iniciar</button>
+              <button type="submit" class="btn btn-primary" onclick="window.location.href='index.html'">Regresar</button>
+            </form>
+            
+        </div>
+    </body>
+</html>

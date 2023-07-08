@@ -1,0 +1,35 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 25 jun 2023, 22:38:10
+    Author     : Rafael
+*/
+body{
+    background: #0cebeb; 
+    background: -webkit-linear-gradient(to top, #29ffc6, #20e3b2, #0cebeb);  
+    background: linear-gradient(to top, #29ffc6, #20e3b2, #0cebeb); 
+
+}
+
+.card {
+    display: none;
+  }
+
+.card:target {
+    display: block;
+}
+b {
+  font-family: "Times New Roman";
+  font-size: 16px;
+  font-style: italic;
+}
+.letra1 {
+    font-family: Bodoni MT;
+    font-size: 23px;
+  }
+.letra2{
+    font-family: Calibri;
+    font-size: 24px;
+}
